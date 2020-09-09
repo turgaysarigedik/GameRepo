@@ -87,3 +87,5 @@ C:\Users\ACER\source\repos\Gameport\Gameport.MvcWebUI\bin\Gameport.Core.dll.conf
 C:\Users\ACER\source\repos\Gameport\Gameport.MvcWebUI\bin\EntityFramework.xml
 C:\Users\ACER\source\repos\Gameport\Gameport.MvcWebUI\bin\EntityFramework.SqlServer.dll
 C:\Users\ACER\source\repos\Gameport\Gameport.MvcWebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\source\repos\Gameport\Gameport.MvcWebUI\bin\PostSharp.dll
+C:\Users\ACER\source\repos\Gameport\Gameport.MvcWebUI\bin\PostSharp.xml

@@ -1,41 +1,32 @@
 ﻿  <!-- header -->
-<link href="~/Content/lib/Font-Awesome/css/font-awesome.min.css" rel="stylesheet" />
-<link href="~/Content/lib/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-<link href="~/Content/lib/Bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="~/Content/lib/Bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+@*<link href="~/Content/lib/Bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />*@
 <link href="~/Content/lib/Bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" />
-<link href="~/Content/Project/css/main.css" rel="stylesheet" />
+<link href="~/Content/Project/css/main.css" rel="stylesheet" type="text/css"/>
 <link href="~/Content/lib/Ionicons/css/ionicons.min.css" rel="stylesheet" />
 
 
-
-<header class="header">
+<!-- header -->
+<header class="header" style="position:relative;">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="header__content">
+                <div class="header__content" style="padding: 3%;">
                     <!-- header logo -->
-                    <a href="index.html" class="header__logo">
-                        <img style="border-radius: 0px;" src="~/Content/Project/images/logo.svg" alt="">
+                    <a href="/Home/Index" class="header__logo">
+                        <img style="border-radius: 0px;" src="~/Content/Project/images/logo-2-removebg-preview.png" alt="">
                     </a>
                     <!-- end header logo -->
                     <!-- header nav -->
                     <ul class="header__nav">
+                       
                         <!-- dropdown -->
                         <li class="header__nav-item">
-                            <a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <a class="dropdown-toggle header__nav-link" href="/Category/Index" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
 
-                            <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
-                                <li><a href="index.html">Home slideshow bg</a></li>
-                                <li><a href="index2.html">Home static bg</a></li>
-                            </ul>
-                        </li>
-                        <!-- end dropdown -->
-                        <!-- dropdown -->
-                        <li class="header__nav-item">
-                            <a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-
-                            <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-                                <li><a href="Categories.html">Categories</a></li>
+                            <ul id="dropdownMenu" class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                <li><a href="/Category/Index">Categories</a></li>
                                 <li><a href="details.html">Movie Detail</a></li>
                             </ul>
                         </li>
@@ -53,7 +44,7 @@
                         <li class="dropdown header__nav-item">
                             <a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="~/Content/Project/images/ios-more.svg" style="height: 20px; font-weight: bolder; "></a>
 
-                            <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
+                            <ul id="dropdownMenu" class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="profile.html">Profile</a></li>
                                 <li><a href="turnuvaSema.html">Match</a></li>
@@ -69,13 +60,13 @@
                     <!-- end header nav -->
                     <!-- header auth -->
                     <div class="header__auth">
-                        <form action="#" class="header__search">
-                            <input class="header__search-input" type="text" placeholder="Search...">
+                        <form action="#" class="header__search" style="margin-left: 10%;">
+                            <input class="header__search-input" type="text" placeholder="Gameport.com">
                             <button class="header__search-button" type="button">
-                                <i class="icon ion-ios-search"></i>
+                                <i class="fa fa-search"></i>
                             </button>
                             <button class="header__search-close" type="button">
-                                <i class="icon ion-md-close"></i>
+                                <!-- <i class="fa fa-search" ></i>                      -->
                             </button>
                         </form>
 
@@ -106,9 +97,13 @@
         </div>
     </div>
 </header>
+<!-- end header -->
+
+
+
 
 
 <script src="~/Content/lib/Jquery/js/jquery-3.3.1.min.js"></script>
 <script src="~/Content/lib/Bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="~/Content/Project/js/main.js"></script>
+<script src="~/Content/Project/js/all.js"></script>
 <!-- end header -->

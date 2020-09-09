@@ -1,75 +1,54 @@
 ﻿@model  Gameport.MvcWebUI.Models.VideoListViewModel
-@*@using Gameport.Entities.Concrete;
-@{ 
-    List<Video> modelCategori2 = new List<Video>();
-    foreach (var model in Model.Videos)
-    {
-        if (model.CategoryID==1)
-        {
-            modelCategori2.Add(model);
-        }
-    }
-}*@
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<link href="~/Content/Project/css/styles.css" rel="stylesheet" type="text/css" />
 <!-- Link Swiper's CSS -->
 <link href="~/Content/lib/Swiper/css/swiper-bundle.css" rel="stylesheet" />
 
-<div style="width: 100%; height: 90%; margin-top: 7%;">
-    <!-- Swiper -->
-    <div class="singleContainer swiper-container">
-        <div class="singleWraper swiper-wrapper">
-            <div class="swiper-slide" style="position: relative;">
-                <img style="min-height: 100%;" class="img-fluid" src="~/Content/Project/images/5edd68363ab1661fac5b45aa.jpg" style="position: absolute;">
-                <img style="position: absolute; height: 20%;" src="~/Content/Project/images/play-circle-outline.svg">
-                <div style="position: absolute; left: 2%; width:40%; ">
-                    <h3 style="color: white;">Hayat Tamircisi Tarçın'ın Mutluluğu!</h3>
-                </div>
-
+<!-- Swiper -->
+<div class="singleContainer swiper-container" style="margin-top:-6%;">
+    <div class="singleWraper swiper-wrapper ">
+        <a href="/VideoDetail/Index" class="swiper-slide" style="position: relative;">
+            <img id="single-img" style="min-height: 100%;" class="img-fluid" src="~/Content/Project/images/banner-image-206878b0-bdc4-4b73-8c3d-1355d30014e5.jpg" style="position: absolute;">
+            <img style="position: absolute;" src="~/Content/Project/images/play (1) (1).png">
+            <div style="position: absolute; left: 2%; width:40%; ">
+                <h3 style="color: white;">Hayat Tamircisi Tarçın'ın Mutluluğu!</h3>
             </div>
-            <div class="swiper-slide" style="position: relative;">
-                <img style="min-height: 100%;" class="img-fluid" src="~/Content/Project/images/5f01c234933ccb2f9473b407.jpg" style="position: absolute;">
-                <img style="position: absolute; height: 20%;" src="~/Content/Project/images/play-circle-outline.svg">
-                <div style="position: absolute; left: 2%; width:40%;">
-                    <h3 style="color: white;">Hayat Tamircisi </h3>
-                </div>
+        </a>
 
+        <a href="/VideoDetail/Index" class="swiper-slide" style="position: relative;">
+            <img id="single-img" style="min-height: 100%;" class="img-fluid" src="~/Content/Project/images/lols.jpg" style="position: absolute;">
+            <img style="position: absolute;" src="~/Content/Project/images/play (1) (1).png">
+            <div style="position: absolute; left: 2%; width:40%; ">
+                <h3 style="color: white;">Hayat Tamircisi Tarçın'ın Mutluluğu!</h3>
             </div>
-            <div class="swiper-slide" style="position: relative;">
-                <img style="min-height: 100%;" class="img-fluid" src="~/Content/Project/images/5f01b3d5933ccb2f9473b3f4.jpg" style="position: absolute;">
-                <img style="position: absolute; height: 20%;" src="~/Content/Project/images/play-circle-outline.svg">
-                <div style="position: absolute; left: 2%;width:40%;">
-                    <h3 style="color: white;">Hayat Tamircisi</h3>
-                </div>
-
-            </div>
-        </div>
+        </a>
 
     </div>
 </div>
 
-<section style="padding: 4%;">
-    <div class="netflix-slider">
-        <h2>Continue watching...</h2>
+
+
+<section style="margin-top: -8%; padding: 2%;">
+    <div class="netflix-slider" style="padding-left: 5%; padding-right: 5%;">
         <div class="categoryContainer swiper-container">
             <div class="cardWraper swiper-wrapper">
-               
-                @foreach (var video in Model.Videos.Where(m=>m.CategoryID==1))
+                @foreach (var video in Model.Categories)
                 {
-                    <a href="singleMovie.html" class="swiper-slide">
-                       <img src="@video.Poster" alt="Movie Title">
-                          <img class="card-play" style="position: absolute;" src="~/Content/Project/images/play.png">
-                              <h4 class="card-play" style="position: absolute; bottom: 10%; color: white;">Film Adı</h4>
+                    <a href="/VideoDetail/Index/@video.CategoryID" class="swiper-slide">
+                        <img src="/Content/Project/images/@video.Picture" alt="Movie Title">
+                        <img class="card-play" style="position: absolute;" src="~/Content/Project/images/play (1) (1).png">
+                        <h4 class="card-play" style="position: absolute; bottom: 10%; color: white;">Film Adı</h4>
                     </a>
                 }
-               
             </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <!--<div class="swiper-pagination"></div>-->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
         </div>
     </div>
     <!---Panel start-->
@@ -77,20 +56,20 @@
         <div id="cart" class="container-fluid">
             <div id="cartTeamGroupRow" class="row">
                 <a href="#" id="cartTeamGroupCol-lg-6" class="col-lg-6">
-                    <img id="cartTeam" src="~/Content/Project/images/coming-bg.jpg">
+                    <img id="cartTeam" src="~/Content/Project/images/Team1.jpg">
                 </a>
                 <a href="#" id="cartTeamGroupCol-lg-6" class="col-lg-6">
-                    <img id="cartTeam" src="~/Content/Project/images/coming-bg6.jpg">
+                    <img id="cartTeam" src="~/Content/Project/images/Team2.jpg">
                 </a>
             </div>
 
 
             <div id="cartTeamGroupRow" class="row">
                 <a href="#" id="cartTeamGroupCol-lg-6" class="col-lg-6">
-                    <img id="cartTeam" src="~/Content/Project/images/404.jpg">
+                    <img id="cartTeam" src="~/Content/Project/images/Team3.jpg">
                 </a>
                 <a href="#" id="cartTeamGroupCol-lg-6" class="col-lg-6">
-                    <img id="cartTeam" src="~/Content/Project/images/ft-bg.jpg">
+                    <img id="cartTeam" src="~/Content/Project/images/Team4.jpg">
                 </a>
             </div>
         </div>
@@ -98,14 +77,34 @@
     <!---Panel end-->
 
     <div class="netflix-slider">
-        <h4>Continue watching...</h4>
+        <h4>League Of Legends</h4>
+        <div class="cardContainer swiper-container">
+            <div class="cardWraper swiper-wrapper">
+                @foreach (var video in Model.Videos.Where(m => m.CategoryID == 1))
+                {
+                    <a href="/VideoDetail/Index/@video.VideoID" class="swiper-slide">
+                        <img src="/Content/Project/images/@video.Poster" alt="Movie Title">
+                        <img class="card-play" style="position: absolute;" src="~/Content/Project/images/play (1) (1).png">
+                    </a>
+                }
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div class="netflix-slider">
+        <h4>Dota 2</h4>
         <div class="cardContainer swiper-container">
             <div class="cardWraper swiper-wrapper">
                 @foreach (var video in Model.Videos.Where(m => m.CategoryID == 3))
                 {
-                    <a href="#" class="swiper-slide"><img src="@video.Poster" alt="Movie Title"></a>
+                    <a href="/VideoDetail/Index/@video.VideoID" class="swiper-slide">
+                        <img src="/Content/Project/images/@video.Poster" alt="Movie Title">
+                    </a>
                 }
-
             </div>
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination"></div> -->
@@ -115,17 +114,15 @@
     </div>
 
     <div class="netflix-slider">
-        <h4>Continue watching...</h4>
+        <h4>Fortnite</h4>
         <div class="cardContainer swiper-container">
             <div class="cardWraper swiper-wrapper">
                 @foreach (var video in Model.Videos.Where(m => m.CategoryID == 4))
                 {
-                    <a href="singleMovie.html" class="swiper-slide">
-                        <img src="@video.Poster" alt="Movie Title">
+                    <a href="/VideoDetail/Index/@video.VideoID" class="swiper-slide">
+                        <img src="/Content/Project/images/@video.Poster" alt="Movie Title">
                     </a>
                 }
-
-
             </div>
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination"></div> -->
@@ -135,16 +132,15 @@
     </div>
 
     <div class="netflix-slider">
-        <h4>Continue watching...</h4>
+        <h4>CS : GO</h4>
         <div class="cardContainer swiper-container">
             <div class="cardWraper swiper-wrapper">
                 @foreach (var video in Model.Videos.Where(m => m.CategoryID == 5))
                 {
-                    <a href="#" class="swiper-slide">
-                        <img src="@video.Poster" alt="Movie Title">
+                    <a href="/VideoDetail/Index/@video.VideoID" class="swiper-slide">
+                        <img src="/Content/Project/images/@video.Poster" alt="Movie Title">
                     </a>
                 }
-
             </div>
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination"></div> -->
@@ -154,16 +150,15 @@
     </div>
 
     <div class="netflix-slider">
-        <h4>Continue watching...</h4>
+        <h4>Overwatch</h4>
         <div class="cardContainer swiper-container">
             <div class="cardWraper swiper-wrapper">
-                @foreach (var video in Model.Videos.Where(m=>m.CategoryID==6))
+                @foreach (var video in Model.Videos.Where(m => m.CategoryID == 6))
                 {
-                <a href="#" class="swiper-slide">
-                    <img src="@video.Poster" alt="Movie Title">
-                </a>
+                    <a href="/VideoDetail/Index/@video.VideoID" class="swiper-slide">
+                        <img src="/Content/Project/images/@video.Poster" alt="Movie Title">
+                    </a>
                 }
-                
             </div>
             <!-- Add Pagination -->
             <!-- <div class="swiper-pagination"></div> -->
@@ -172,11 +167,32 @@
         </div>
     </div>
 
+
+    <div class="netflix-slider">
+        <h4>Arena Of Valor</h4>
+        <div class="cardContainer swiper-container">
+            <div class="cardWraper swiper-wrapper">
+                @foreach (var video in Model.Videos.Where(m => m.CategoryID == 7))
+                {
+                    <a href="/VideoDetail/Index/@video.VideoID" class="swiper-slide">
+                        <img src="/Content/Project/images/@video.Poster" alt="Movie Title">
+                    </a>
+                }
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
 </section>
+
+
+
 
 <!-- Swiper JS -->
 <script src="~/Content/lib/Swiper/js/swiper-bundle.min.js"></script>
-<script src="~/Content/Project/js/Script.js"></script>
+<script src="~/Content/Project/js/scripts.js"></script>
 
 
 

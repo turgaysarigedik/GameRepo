@@ -1,4 +1,5 @@
-﻿using Gameport.Entities.Concrete;
+﻿using Gameport.Entities.ComplexType;
+using Gameport.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace Gameport.Business.Abstract
         void Add(Video video);
         void Update(Video video);
         void Delete(Video video);
+        List<CategoryList> GetVideoDetails();
     }
 }

@@ -3,115 +3,9 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<html>
-<head>
-    <style>
-    body{
-        font-family: poppins;
-        background: #161616;
-        
-    }
-    .wrapper{
-        width: 70%;
-        margin: 10% auto;
-        display: flex;
-        flex-direction: row;
-    }
-    .single-price{
-        width: 33%;
-        background: #262626;
-        float: left;
-        margin-top: 2%;
-        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
-        text-align: center;
-        transition: 0.9s;
-        border-radius: 25px;
-
-    }
-    @*@media (max-width: 600px) {
-        .wrapper{
-            flex-direction: column;
-
-        }
-        .single-price{
-          width: 100%;
-
-        }
-    }*@
-    @*@media (max-width: 900px) {
-        .wrapper{
-          width: 85%;
-        }
-
-    }*@
-
-
-    .single-price:nth-child(2){
-     margin-top: -1%;
-     height: 100%;
-
-    }
-    .price{
-        width: 40%;
-        height: 20%;
-        border-radius: 50%;
-        border: 2px solid #da4357;
-        margin: 5% auto 0 auto;
-        text-align: center;
-
-    }
-    .deals{
-        margin-top: 10%;
-    }
-    .single-price h1{
-        font-size: x-large;
-        color: #fff;
-        line-height: 3;
-        text-transform: uppercase;
-    }
-    .price h2{
-        font-size: xx-large;
-        color: #fff;
-    }
-    .deals h4{
-        font-size: medium;
-        font-weight: normal;
-        text-align: center;
-        color: #fff;
-        line-height: 1;
-    }
-    .single-price:hover{
-        background: #da4357;
-        color: #fff;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 1);
-        transform:scale(1.1);
-        z-index: 1;
-
-    }
-    .single-price:hover .price{
-        border-color: #fff;
-    }
-    .single-price a{
-        text-decoration: none;
-        background: #da4357;
-        color: #fff;
-        padding: 4% 20%;
-        display: inline-block;
-        margin: 10% auto;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-radius: 25px;
-    }
-    .single-price:hover a{
-        background: #262626;
-        color: #fff;
-    }
-
-    </style>
-</head>
+<link href="~/Content/Project/css/styles.css" rel="stylesheet" type="text/css"/>
 <body>
-    <div class="wrapper">
+    <div class="wrapperTable">
         <div class="single-price">
             <h1>Basic</h1>
             <div class="price">
@@ -156,6 +50,6 @@
         </div>
     </div>
 </body>
-</html>
+
 
 

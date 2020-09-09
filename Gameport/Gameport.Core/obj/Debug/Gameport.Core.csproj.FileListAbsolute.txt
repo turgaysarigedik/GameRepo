@@ -25,3 +25,7 @@ C:\Users\ACER\source\repos\Gameport\Gameport.Core\obj\Debug\Gameport.Core.csproj
 C:\Users\ACER\source\repos\Gameport\Gameport.Core\obj\Debug\Gameport.Core.csproj.CopyComplete
 C:\Users\ACER\source\repos\Gameport\Gameport.Core\obj\Debug\Gameport.Core.dll
 C:\Users\ACER\source\repos\Gameport\Gameport.Core\obj\Debug\Gameport.Core.pdb
+C:\Users\ACER\source\repos\Gameport\Gameport.Core\bin\Debug\PostSharp.dll
+C:\Users\ACER\source\repos\Gameport\Gameport.Core\bin\Debug\PostSharp.xml
+C:\Users\ACER\source\repos\Gameport\Gameport.Core\bin\Debug\Gameport.Core.pssym
+C:\Users\ACER\source\repos\Gameport\Gameport.Core\obj\Debug\Gameport.Core.dll.postsharp

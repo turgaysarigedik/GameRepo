@@ -1,5 +1,6 @@
 ﻿using Gameport.Business.Abstract;
 using Gameport.DataAccess.Abstract;
+using Gameport.Entities.ComplexType;
 using Gameport.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,11 @@ namespace Gameport.Business.Concrete.Managers
         public List<Video> GetList(Expression<Func<Task, bool>> filter = null)
         {
             return _videoDal.GetAll();
+        }
+
+        public List<CategoryList> GetVideoDetails()
+        {
+            return _videoDal.GetVideoDetails();
         }
 
         public void Update(Video video)

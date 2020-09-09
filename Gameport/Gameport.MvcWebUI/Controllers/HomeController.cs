@@ -20,9 +20,10 @@ namespace Gameport.MvcWebUI.Controllers
         {
             var model = new VideoListViewModel
             {
-                Videos = _videoService.GetList()
+                Videos = _videoService.GetList(),
+                Categories=_videoService.GetVideoDetails()
             };
-            
+           
             return View(model);
         }
     }

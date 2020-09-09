@@ -102,18 +102,37 @@
     <Content Include="Content\lib\Bootstrap\css\bootstrap-reboot.min.css" />
     <Content Include="Content\lib\Bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\lib\Bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\lib\Bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\lib\Font-Awesome\css\font-awesome.min.css" />
     <Content Include="Content\lib\Ionicons\css\ionicons.min.css" />
     <Content Include="Content\lib\Jquery\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\lib\Jquery\js\jquery.mCustomScrollbar.min.js" />
+    <Content Include="Content\lib\Jquery\js\jquery.morelines.min.js" />
+    <Content Include="Content\lib\Owl.Carousel\js\owl.carousel.min.js" />
+    <Content Include="Content\lib\Plyr\css\plyr.css" />
+    <Content Include="Content\lib\Plyr\js\plyr.min.js" />
     <Content Include="Content\lib\Swiper\css\swiper-bundle.css" />
     <Content Include="Content\lib\Swiper\js\swiper-bundle.min.js" />
     <Content Include="Content\Project\css\main.css" />
-    <Content Include="Content\Project\css\Style.css" />
-    <Content Include="Content\Project\css\Style2.css" />
+    <Content Include="Content\Project\css\styles.css" />
+    <Content Include="Content\Project\css\style2.css" />
+    <Content Include="Content\Project\css\videoStyle.css" />
     <Content Include="Content\Project\images\404.jpg" />
     <Content Include="Content\Project\images\5edd68363ab1661fac5b45aa.jpg" />
     <Content Include="Content\Project\images\5f01b3d5933ccb2f9473b3f4.jpg" />
     <Content Include="Content\Project\images\5f01c234933ccb2f9473b407.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-1.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-10.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-2.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-3.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-4.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-5.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-6.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-7.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-8.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor-9.jpg" />
+    <Content Include="Content\Project\images\arena-of-valor.jpg" />
+    <Content Include="Content\Project\images\banner-image-206878b0-bdc4-4b73-8c3d-1355d30014e5.jpg" />
     <Content Include="Content\Project\images\bg.jpg" />
     <Content Include="Content\Project\images\cart-outline.svg" />
     <Content Include="Content\Project\images\cart.svg" />
@@ -126,18 +145,80 @@
     <Content Include="Content\Project\images\cover4.jpg" />
     <Content Include="Content\Project\images\cover5.jpg" />
     <Content Include="Content\Project\images\cover6.jpg" />
+    <Content Include="Content\Project\images\csgo-1.jpg" />
+    <Content Include="Content\Project\images\csgo-10.jpg" />
+    <Content Include="Content\Project\images\csgo-2.jpg" />
+    <Content Include="Content\Project\images\csgo-3.jpg" />
+    <Content Include="Content\Project\images\csgo-4.jpg" />
+    <Content Include="Content\Project\images\csgo-5.jpg" />
+    <Content Include="Content\Project\images\csgo-6.jpg" />
+    <Content Include="Content\Project\images\csgo-7.jpg" />
+    <Content Include="Content\Project\images\csgo-8.jpg" />
+    <Content Include="Content\Project\images\csgo-9.jpg" />
+    <Content Include="Content\Project\images\CSGO.jpg" />
+    <Content Include="Content\Project\images\dota2-1.jpg" />
+    <Content Include="Content\Project\images\dota2-10.jpg" />
+    <Content Include="Content\Project\images\dota2-2.jpg" />
+    <Content Include="Content\Project\images\dota2-3.jpg" />
+    <Content Include="Content\Project\images\dota2-4.jpg" />
+    <Content Include="Content\Project\images\dota2-5.jpg" />
+    <Content Include="Content\Project\images\dota2-6.jpg" />
+    <Content Include="Content\Project\images\dota2-7.jpg" />
+    <Content Include="Content\Project\images\dota2-8.jpg" />
+    <Content Include="Content\Project\images\dota2-9.jpg" />
+    <Content Include="Content\Project\images\dota2-poster.jpg" />
     <Content Include="Content\Project\images\facebook.png" />
+    <Content Include="Content\Project\images\fortnite-1.jpg" />
+    <Content Include="Content\Project\images\fortnite-10.jpg" />
+    <Content Include="Content\Project\images\fortnite-2.jpg" />
+    <Content Include="Content\Project\images\fortnite-3.jpg" />
+    <Content Include="Content\Project\images\fortnite-4.jpg" />
+    <Content Include="Content\Project\images\fortnite-5.jpg" />
+    <Content Include="Content\Project\images\fortnite-6.jpg" />
+    <Content Include="Content\Project\images\fortnite-7.jpg" />
+    <Content Include="Content\Project\images\fortnite-8.jpg" />
+    <Content Include="Content\Project\images\fortnite-9.jpg" />
+    <Content Include="Content\Project\images\fortnite-poster.jpg" />
     <Content Include="Content\Project\images\ft-bg.jpg" />
     <Content Include="Content\Project\images\instagram.png" />
     <Content Include="Content\Project\images\ios-more.svg" />
     <Content Include="Content\Project\images\joker.png" />
     <Content Include="Content\Project\images\kanal_d_nin_yeni_dizisi_cati_kati_ask.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-1.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-10.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-2.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-3.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-4.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-5.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-6.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-7.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-8.jpg" />
+    <Content Include="Content\Project\images\league-of-legends-9.jpg" />
+    <Content Include="Content\Project\images\logo-2-removebg-preview.png" />
     <Content Include="Content\Project\images\logo.png" />
     <Content Include="Content\Project\images\logo.svg" />
+    <Content Include="Content\Project\images\lol-poster.jpg" />
+    <Content Include="Content\Project\images\lols.jpg" />
+    <Content Include="Content\Project\images\overwatch-1.jpg" />
+    <Content Include="Content\Project\images\overwatch-10.jpg" />
+    <Content Include="Content\Project\images\overwatch-2.jpg" />
+    <Content Include="Content\Project\images\overwatch-3.jpg" />
+    <Content Include="Content\Project\images\overwatch-4.jpg" />
+    <Content Include="Content\Project\images\overwatch-5.jpg" />
+    <Content Include="Content\Project\images\overwatch-6.jpg" />
+    <Content Include="Content\Project\images\overwatch-7.jpg" />
+    <Content Include="Content\Project\images\overwatch-8.jpg" />
+    <Content Include="Content\Project\images\overwatch-9.jpg" />
+    <Content Include="Content\Project\images\overwatch.jpg" />
+    <Content Include="Content\Project\images\play %281%29 %281%29.png" />
     <Content Include="Content\Project\images\play-circle-outline.svg" />
     <Content Include="Content\Project\images\play.png" />
     <Content Include="Content\Project\images\team-img-3.png" />
     <Content Include="Content\Project\images\team-img-4.png" />
+    <Content Include="Content\Project\images\Team1.jpg" />
+    <Content Include="Content\Project\images\Team2.jpg" />
+    <Content Include="Content\Project\images\Team3.jpg" />
+    <Content Include="Content\Project\images\Team4.jpg" />
     <Content Include="Content\Project\images\thumbnail %281%29.jpg" />
     <Content Include="Content\Project\images\thumbnail %282%29.jpg" />
     <Content Include="Content\Project\images\thumbnail %283%29.jpg" />
@@ -154,8 +235,9 @@
     <Content Include="Content\Project\images\thumbnail8.jpg" />
     <Content Include="Content\Project\images\thumbnail9.jpg" />
     <Content Include="Content\Project\images\twitter.png" />
-    <Content Include="Content\Project\js\main.js" />
-    <Content Include="Content\Project\js\Script.js" />
+    <Content Include="Content\Project\js\all.js" />
+    <Content Include="Content\Project\js\scripts.js" />
+    <Content Include="Content\Project\images\Logo-removebg-preview.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -163,6 +245,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PayController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
@@ -170,6 +253,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoryListViewModel.cs" />
+    <Compile Include="Models\VideoDetailViewModel.cs" />
     <Compile Include="Models\VideoListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -185,6 +270,10 @@
     <Content Include="Views\Account\SingUp.cshtml" />
     <Content Include="Views\Pay\Index.cshtml" />
     <Content Include="Views\VideoDetail\Index.cshtml" />
+    <Content Include="Views\Video\Index.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Checkout\checkout.cshtml" />
+    <Content Include="Views\Video\GetDetail.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -194,8 +283,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Category\" />
-    <Folder Include="Views\Video\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gameport.Business\Gameport.Business.csproj">

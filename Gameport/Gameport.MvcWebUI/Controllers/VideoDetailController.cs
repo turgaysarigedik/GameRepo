@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gameport.MvcWebUI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,13 @@ namespace Gameport.MvcWebUI.Controllers
     public class VideoDetailController : Controller
     {
         // GET: VideoDetail
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
+            var model = new VideoDetailViewModel
+            {
+                ID = id
+            };
+            return View(model);
         }
     }
 }

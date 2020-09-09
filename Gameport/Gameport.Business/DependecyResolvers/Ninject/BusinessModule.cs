@@ -24,8 +24,12 @@ namespace Gameport.Business.DependecyResolvers.Ninject
             Bind<IVideoDal>().To<EfVideoDal>().InSingletonScope();
             Bind<IVideoService>().To<VideoManager>().InSingletonScope();
 
+            Bind<IUserDal>().To<EfUserDal>().InSingletonScope();
+            Bind<IUserService>().To<UserManager>().InSingletonScope();
+
             Bind(typeof(IQuaryableRepository<>)).To(typeof(EfQuaryableRepository<>)).InSingletonScope();
             Bind<DbContext>().To<GameportDBContext>().InSingletonScope();
+
 
         }
     }

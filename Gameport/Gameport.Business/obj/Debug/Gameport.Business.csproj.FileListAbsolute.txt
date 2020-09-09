@@ -31,3 +31,5 @@ C:\Users\ACER\source\repos\Gameport\Gameport.Business\obj\Debug\Gameport.Busines
 C:\Users\ACER\source\repos\Gameport\Gameport.Business\obj\Debug\Gameport.Business.csproj.CopyComplete
 C:\Users\ACER\source\repos\Gameport\Gameport.Business\obj\Debug\Gameport.Business.dll
 C:\Users\ACER\source\repos\Gameport\Gameport.Business\obj\Debug\Gameport.Business.pdb
+C:\Users\ACER\source\repos\Gameport\Gameport.Business\bin\Debug\PostSharp.dll
+C:\Users\ACER\source\repos\Gameport\Gameport.Business\bin\Debug\PostSharp.xml

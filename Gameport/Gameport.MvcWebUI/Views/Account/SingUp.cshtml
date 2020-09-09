@@ -1,26 +1,22 @@
 ﻿
 @{
     ViewBag.Title = "SingUp";
-    Layout =null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<link href="~/Content/Project/css/styles.css" rel="stylesheet" />
 
 <html>
 <head>
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-            background: #161616;
-        }
-
+       
         .box {
-            width: 300px;
+            width: 27%;
             padding: 40px;
-            position: absolute;
-            top: 50%;
+            position: relative;
+            top: 40%;
             left: 50%;
+            margin-bottom:6%;
             transform: translate(-50%,-50%);
             background: #191919;
             text-align: center;
@@ -32,7 +28,7 @@
                 font-weight: 500;
             }
 
-            .box input[type="text"], .box input[type="password"] {
+            .box input[type="text"], .box input[type="password"] ,.box input[type="email"]{
                 border: 0;
                 background: none;
                 display: block;
@@ -47,7 +43,7 @@
                 transition: 0.25s;
             }
 
-                .box input[type="text"]:focus, .box input[type="password"]:focus {
+                .box input[type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus{
                     width: 280px;
                     border-color: #2ecc71;
                 }
@@ -78,15 +74,19 @@
     </style>
 </head>
 <body>
-    <form action="" class="box" method="POST">
+    @using (Html.BeginForm("SingUp", "Account", FormMethod.Post, new { @class = "box" }))
+    {
         <h1>SING UP</h1>
-        <input type="text" value="" placeholder="name">
-        <input type="text" value="" placeholder="user name">
-        <input type="password" value="" placeholder="password">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+        <input type="email" id="email" name="email" placeholder="E-Mail"/>
+        <input type="text" id="userName" name="userName" placeholder="User Name">
+        <input type="password" id="password" name="password" placeholder="Password">
         <a href="#">Did you forget your password?</a>
         <a href="#">Create Account</a>
         <input type="submit" value="Login">
-    </form>
+    }
+
 </body>
 </html>
 

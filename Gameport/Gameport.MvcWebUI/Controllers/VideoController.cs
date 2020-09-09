@@ -1,4 +1,5 @@
 ﻿using Gameport.Business.Abstract;
+using Gameport.MvcWebUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,23 @@ namespace Gameport.MvcWebUI.Controllers
             _videoService = videoService;
         }
         // GET: Video
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
+            var model = new VideoDetailViewModel
+            {
+                ID=id,
+                VideoDetails = _videoService.GetById(id)
+            };
+            return View(model);
+        }
+        public ActionResult GetDetail(int id)
+        {
+            var model = new VideoDetailViewModel
+            {
+                ID = id,
+                VideoDetails = _videoService.GetById(id)
+            };
+            return View(model);
         }
     }
 }

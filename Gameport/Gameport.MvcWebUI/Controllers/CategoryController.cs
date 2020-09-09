@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Gameport.Business.Abstract;
+using Gameport.MvcWebUI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,21 @@ namespace Gameport.MvcWebUI.Controllers
 {
     public class CategoryController : Controller
     {
+        private ICategoryService _categoryService;
+
+        public CategoryController(ICategoryService categoryService)
+        {
+            _categoryService = categoryService;
+        }
+
         // GET: Category
         public ActionResult Index()
         {
-            return View();
+            var model = new CategoryListViewModel
+            {
+                Categories = _categoryService.GetList()
+            };
+            return View(model);
         }
     }
 }

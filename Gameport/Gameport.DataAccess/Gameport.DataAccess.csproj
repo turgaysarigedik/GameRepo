@@ -52,8 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Abstract\IVideoDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfUserDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfVideoDal.cs" />
     <Compile Include="Concrete\EntityFramework\GameportDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

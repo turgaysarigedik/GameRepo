@@ -1,4 +1,5 @@
 ﻿using Gameport.Core.DataAccess;
+using Gameport.Entities.ComplexType;
 using Gameport.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,6 @@ namespace Gameport.DataAccess.Abstract
 {
    public interface IVideoDal:IEntityRepository<Video>
     {
+        List<CategoryList> GetVideoDetails();
     }
 }

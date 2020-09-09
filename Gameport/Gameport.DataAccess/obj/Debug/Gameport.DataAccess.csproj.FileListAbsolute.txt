@@ -28,3 +28,5 @@ C:\Users\ACER\source\repos\Gameport\Gameport.DataAccess\obj\Debug\Gameport.DataA
 C:\Users\ACER\source\repos\Gameport\Gameport.DataAccess\obj\Debug\Gameport.DataAccess.csproj.CopyComplete
 C:\Users\ACER\source\repos\Gameport\Gameport.DataAccess\obj\Debug\Gameport.DataAccess.dll
 C:\Users\ACER\source\repos\Gameport\Gameport.DataAccess\obj\Debug\Gameport.DataAccess.pdb
+C:\Users\ACER\source\repos\Gameport\Gameport.DataAccess\bin\Debug\PostSharp.dll
+C:\Users\ACER\source\repos\Gameport\Gameport.DataAccess\bin\Debug\PostSharp.xml

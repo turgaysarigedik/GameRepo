@@ -23,3 +23,5 @@ C:\Users\ACER\source\repos\Gameport\Gameport.Entities\obj\Debug\Gameport.Entitie
 C:\Users\ACER\source\repos\Gameport\Gameport.Entities\obj\Debug\Gameport.Entities.csproj.CopyComplete
 C:\Users\ACER\source\repos\Gameport\Gameport.Entities\obj\Debug\Gameport.Entities.dll
 C:\Users\ACER\source\repos\Gameport\Gameport.Entities\obj\Debug\Gameport.Entities.pdb
+C:\Users\ACER\source\repos\Gameport\Gameport.Entities\bin\Debug\PostSharp.dll
+C:\Users\ACER\source\repos\Gameport\Gameport.Entities\bin\Debug\PostSharp.xml
